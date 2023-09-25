@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="sp">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Protocolos HTTP</title>
+  
+    <link rel="stylesheet" href="style.css">
+
+</head>   
+<body>
+    <header class="header">
+        <nav class="navbar">
+        <h1><a href="Protocolo HTTP.html" class="titulo">Protocolo HTTP</a></h1>
+        <ul class="nav-links">
+            <li><a href="Protocolo HTTP estructura y funcionamiento.html">Estructura y funcionamiento</a></li>
+            <li><a href="Protocolo HTTP Metodo de petición.html">Metodos de petición</a></li>
+            <li><a href="Protocolo HTTP Código de respuesta.html">Códigos de respuesta</a></li>
+            <li><a href="Puertos TCP y UDP.html">Puertos de red TCP y UDP</a></li>
+        </ul>
+        </nav>
+    </header>
+    
+    
+
+    
+   
+    
+<div>
+    <h2>Puertos de red TCP y UDP</h2>
+    <p>El protocolo TCP es un protocolo conectivo, fiable y orientado a conexión, esto significa que es capaz de retransmitir los segmentos de paquetes en caso de que haya alguna pérdida desde el origen al destino. El protocolo TCP para establecer la conexión realiza el 3-way handshake, con el objetivo de que la conexión sea lo más fiable posible. Si estamos utilizando algún protocolo en la capa de aplicación como HTTP, FTP o SSH que todos ellos utilizan el protocolo TCP, en la primera comunicación se realizará este intercambio de mensajes.</p> <br>
+    <P>UDP es un protocolo de transporte que se utiliza para la comunicación en redes y se caracteriza por su falta de conexión y su falta de garantía de entrega. A diferencia de TCP, UDP no establece una conexión antes de enviar datos y no realiza un seguimiento exhaustivo de los paquetes para asegurar que lleguen en orden y sin pérdida. UDP es preferido en situaciones donde la velocidad y la eficiencia son más importantes que la confiabilidad, como en aplicaciones de transmisión en tiempo real, como video en streaming o voz sobre IP (VoIP). Al igual que con TCP, los puertos UDP están numerados del 0 al 65535.</P> <br>
+
+    <h2>Puertos más utilizados</h2>
+    <ul>
+        <li>Puerto 21: El puerto 21 por norma general se usa para las conexiones a servidores FTP en su canal de control, siempre que no hayamos cambiado el puerto de escucha de nuestro servidor FTP o FTPES.</li>
+        <li>Puerto 22: Por normal general este puerto se usa para conexiones seguras SSH y SFTP, siempre que no hayamos cambiado el puerto de escucha de nuestro servidor SSH.</li>
+        <li>Puerto 25:  El puerto 25 es usado por el protocolo SMTP para él envió de correos electrónicos.</li>
+        <li>Puerto 80: Este puerto es el que se usa para la navegación web de forma no segura HTTP.</li>
+        <li>Puerto 110: Este puerto lo usan los gestores de correo electrónico para establecer conexión con el protocolo POP3.</li>
+        <li>Puerto 143: El puerto 143 lo usa el protocolo IMAP que es también usado por los gestores de correo electrónico.</li>
+        <li>Puerto 443: Este puerto es también para la navegación web, pero en este caso usa el protocolo HTTPS que es seguro y utiliza el protocolo TLS por debajo.</li>
+        <li>Puerto 587: Este puerto lo usa el protocolo SMTP SSL y, al igual que el puerto 25 sirve para el envío de correos electrónicos, pero en este caso de forma segura.</li>
+        <li>Puerto 990: Si utilizamos FTPS (FTP Implícito) utilizaremos el puerto por defecto 990, aunque se puede cambiar.</li>
+        <li>Puerto 993: El puerto 993 lo usa el protocolo IMAP SSL que es también usado por los gestores de correo electrónico para establecer la conexión de forma segura.</li>
+        <li>Puerto 995: Al igual que el puerto 110, sirve para que los gestores de correo electrónico establezcan conexión segura con el protocolo POP3 SSL.</li>
+        <li>Puerto 4662 TCP y 4672 UDP: Estos puertos los usa el mítico programa eMule, que es un programa para descargar todo tipo de archivos.</li>
+        <li>Puerto 5222: Este es el puerto predeterminado para las conexiones cliente-servidor en XMPP. </li>
+        <li>Puerto 5269: Este puerto se utiliza para la comunicación entre servidores XMPP.</li>
+        <li>Puerto 6667: Este es el puerto estándar utilizado para las conexiones no seguras de IRC. </li>
+        <li>Puerto 6697: Este es el puerto utilizado para las conexiones seguras de IRC a través de SSL/TLS. </li>
+        <li>Puertos 6881 y 6969: Son usados por el programa BitTorrent, que sirve para e intercambio de ficheros.</li>
+    </ul> <br>
+
+    <h2>Protcolos de red</h2>
+    <ol>
+        <li>HTTP: El puerto predeterminado para HTTP no seguro es el puerto 80. Por lo tanto, cuando un cliente web inicia una solicitud HTTP sin especificar un puerto, el navegador se conecta al puerto 80 del servidor web por defecto.</li>
+        <li>HTTPS: El protocolo HTTPS es una versión segura de HTTP que utiliza cifrado SSL/TLS para proteger la privacidad y la integridad de los datos transmitidos entre el cliente y el servidor. El puerto predeterminado para HTTPS es el puerto 443.</li>
+        <li>SMTP: Utiliza el puerto 25 por defecto para la comunicación. Principalmente para la comunicación entre servidores de correo electrónico. Para los clientes de correo electrónico que envían correo saliente, se prefiere el uso de puertos alternativos, como el puerto 587, que se ha designado específicamente para la comunicación de clientes de correo saliente. </li>
+        <li>POP3: Utiliza el puerto 110 por defecto para la recepción de correos electrónicos desde un servidor de correo electrónico. Cuando se utiliza una conexión segura POP3 a través de SSL/TLS para proteger la privacidad y la seguridad de la comunicación, el puerto utilizado cambia. El puerto seguro para POP3 es el puerto 995.</li>
+        <li>IMAP: Utiliza el puerto 143 por defecto para la comunicación. IMAP es un protocolo que permite a los clientes de correo electrónico acceder y administrar mensajes de correo electrónico almacenados en un servidor de correo. Al igual que con el protocolo POP3, cuando se utiliza una conexión segura IMAP a través de SSL/TLS para proteger la privacidad y la seguridad de la comunicación, el puerto utilizado cambia. El puerto seguro para IMAP es el puerto 993.</li>
+        <li>MIME: No utiliza un puerto específico por sí mismo, ya que MIME es un estándar para la representación y el formato de mensajes de correo electrónico y no un protocolo de red que requiera un puerto dedicado. MIME se utiliza para especificar cómo se deben estructurar y presentar los datos en los mensajes de correo electrónico, incluidos los archivos adjuntos, las imágenes y otros tipos de contenido.</li>
+        <li>FTP: El puerto de control FTP es el puerto 21 por defecto. Este puerto se utiliza para establecer y administrar la sesión de control entre el cliente FTP y el servidor FTP. En esta sesión de control, se envían comandos y respuestas para autenticación, navegación de directorios y otras operaciones relacionadas con la gestión de la sesión.</li>
+        <li>FTPS:
+            <ul> 
+              <li>Puerto de Control FTPS implícito: El puerto de control en FTPS implícito es el puerto 990 por defecto. La comunicación entre el cliente y el servidor en este puerto está cifrada desde el principio. Por lo tanto, cuando se utiliza FTPS implícito, la conexión se realiza inicialmente a través del puerto 990 para la sesión de control cifrada.</li>  
+              <li>Puerto de Control FTPS explícito: El puerto de control en FTPS explícito es el mismo que el utilizado en FTP estándar, es decir, el puerto 21 por defecto. La sesión de control se inicia sin cifrado y luego se establece una conexión segura mediante un comando específico, generalmente utilizando el comando "AUTH" para habilitar la seguridad.</li>  
+            </ul>
+        </li>
+        <li>SFTP: utiliza el puerto estándar SSH, que es el puerto 22 de manera predeterminada. Por lo tanto, cuando te conectas a un servidor SFTP, generalmente lo haces a través del puerto 22 de SSH. La mayoría de las implementaciones de servidores SFTP utilizan el puerto 22 como el puerto predeterminado para la comunicación segura.</li>
+        <li>BitTorrent: El rango de puertos comunes para BitTorrent va desde el puerto 6881 al puerto 6889. Estos puertos se utilizan tanto para las conexiones entrantes como para las salientes. Los clientes BitTorrent utilizan varios puertos dentro de este rango para equilibrar la carga y permitir múltiples conexiones simultáneas a diferentes pares.</li>
+        <li>eDonkey:
+            <ul> 
+                <li>Puerto TCP 4662: Este es el puerto principal utilizado por el protocolo eDonkey para la comunicación entre clientes. A través de este puerto, los clientes eDonkey pueden conectarse, buscar y transferir archivos entre sí.</li>  
+                <li>Puerto UDP 4672: Este es el puerto que se utiliza para la búsqueda de servidores eDonkey y la obtención de información sobre otros clientes. El puerto UDP 4672 es importante para el descubrimiento de otros clientes en la red eDonkey.</li>  
+              </ul>
+        </li>
+        <li>FastTrack: El protocolo FastTrack no utiliza un puerto fijo y predefinido como algunos otros protocolos. En lugar de eso, FastTrack solía emplear una técnica de "puerto de salto" (port hopping) que permitía a las aplicaciones de compartición de archivos seleccionar y cambiar dinámicamente los puertos utilizados para la comunicación entre pares. Esta técnica hacía que fuera más difícil de bloquear o regular el tráfico de FastTrack.</li>
+        <li>IRC:
+            <ul>
+                <li>Puerto 6667: La mayoría de los servidores de IRC escuchan en este puerto para las conexiones de los clientes.</li>
+                <li>Puerto 6697: Si deseas una conexión segura y cifrada para tus comunicaciones de IRC, puedes utilizar este puerto.</li>
+            </ul>
+        </li>
+        <li>XMPP:
+            <ul>
+                <li>Puerto 5222: Se utiliza para la comunicación estándar entre un cliente de mensajería XMPP y un servidor XMPP. En la mayoría de los casos, las aplicaciones de mensajería instantánea XMPP utilizan este puerto para conectarse a un servidor XMPP.</li>
+                <li>Puerto 5269: Cuando un servidor XMPP necesita comunicarse con otro servidor para enrutar mensajes o presencia, utiliza el puerto 5269. Esta comunicación entre servidores permite la federación de dominios y la interoperabilidad entre diferentes implementaciones de servidores XMPP.</li>
+            </ul>
+        </li>
+        <li>MTProto: Utiliza varios puertos para diferentes tipos de conexiones y servicios relacionados con Telegram:
+            <ul>
+                <li>Puerto 443: Este puerto se utiliza para la comunicación HTTPS y es comúnmente utilizado para la comunicación de cliente Telegram en lugares donde se aplican restricciones de firewall. Utiliza el cifrado TLS/SSL para proporcionar una capa adicional de seguridad.</li>
+                <li>Puerto TCP 80: Al igual que el puerto 443, el puerto 80 se utiliza para la comunicación HTTP y puede ser utilizado para conexiones de cliente Telegram en lugares con restricciones de firewall.</li>
+                <li>Puertos de otros servicios: Telegram también utiliza puertos adicionales para servicios específicos, como la conexión MTProto a través de SOCKS5 (generalmente en el rango de puertos 1080-1085) y puertos para servicios de voz y video llamadas. Estos puertos pueden variar y dependerán de la implementación y configuración específica de Telegram.</li>
+            </ul>
+        </li>
+    </ol>
+
+
+</div>
+
+</body>
+</html>
