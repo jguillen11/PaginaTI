@@ -1,13 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300&display=swap');
 
 *{
-box-sizing: border-box;
-margin: 0;
 font-family: 'Heebo', sans-serif;
 font-size: 20px;
 }
 body{
-    margin: 20px;
 text-align: justify;
 background-color: #fff8f7
 }
@@ -18,7 +15,7 @@ display: flex;
 justify-content: space-between;
 align-items: center;
 height: 85px;
-padding: 5px 10%;
+
 }
 .titulo{
     text-decoration: none;
