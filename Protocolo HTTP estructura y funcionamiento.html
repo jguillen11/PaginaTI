@@ -9,51 +9,62 @@
 
 </head>
 <body>
-    
     <header>
-        <div class="logo"><a href="index.html">Logo</div>
-        <nav class="navbar">
         <ul>
-            <li><a href="Protocolo HTTP estructura y funcionamiento.html">Estructura y funcionamiento</a></li>
-            <li><a href="Protocolo HTTP Metodo de petición.html">Metodos de petición</a></li>
-            <li><a href="Protocolo HTTP Código de respuesta.html">Códigos de respuesta</a></li>
-            <li><a href="Puertos TCP y UDP.html">Puertos de red TCP y UDP</a></li>
-            <li><a href="Tipos de software.html">Clasifiación de software</a></li>
-            <li><a href="Contenidos de internet.html">Contenidos de Internet</a></li>
-            <li><a href="tecnolgías disruptivas.html">Tecnolgías disruptivas</a></li>
-            <li><a href="LPWAN.html">L.P.W.A.N</a></li>
-            <li><a href="Prompt.html">PROMPTS</a></li>
-        </ul>
-        </nav>
+            <li><a href="index.html">HOME</a></li>
+                <li>
+                    <a href="#">Protocolo HTTP</a>
+                    <ul class="dropdown">
+                        <li><a href="Protocolo HTTP estructura y funcionamiento.html">Estructura y funcionamiento</a></li>
+                        <li><a href="Protocolo HTTP Metodo de petición.html">Métodos de petición</a></li>
+                        <li><a href="Protocolo HTTP Código de respuesta.html">Códigos de respuesta</a></li>
+                    </ul>
+                </li>
+    
+                <li><a href="Puertos TCP y UDP.html">Puertos TCP y UDP</a></li>
+                <li><a href="Tipos de software.html">Clasificación de software</a></li>
+                <li><a href="Contenidos de internet.html">Contenidos de Internet</a></li>
+                <li><a href="tecnolgías disruptivas.html">Tecnologías disruptivas</a></li>
+                <li><a href="LPWAN.html">L.P.W.A.N</a></li>
+                <li><a href="Prompt.html">PROMPTS</a></li>
+        </ul>    
     </header>
-   
-    
-
-    
-    
-   
-    <div> 
-    <h2>Estructura y funcionamiento</h2>
-    <p>El Protocolo de Transferencia de Hipertexto es un protocolo utilizado en la World Wide Web para la transferencia de datos, especialmente documentos de hipertexto, como páginas web. Mantiene una estructura basada en los clientes y servidores y orientada a transacciones.</div>
-        <ol>
-        <li>Cliente:El cliente es el software o la aplicación que solicita recursos (como páginas web) desde un servidor web. El cliente inicia la comunicación HTTP enviando una solicitud al servidor.</li> <br>
-        <li>Servidor: El servidor es el software que almacena los recursos web y los entrega a los clientes cuando se les solicita. Responde a las solicitudes HTTP que recibe de los clientes.</li> <br>
-        <li>URI (Uniform Resource Identifier): La URI es una cadena que identifica un recurso en la web. Es parte fundamental de una solicitud HTTP y puede ser una URL (Uniform Resource Locator) que incluye la dirección del recurso y el protocolo a utilizar.</li> <br>
-        <li>Método HTTP: La solicitud HTTP incluye un método que indica la acción que se debe realizar en el recurso identificado por la URI. </li> <br>
-        <li>Encabezados HTTP: Los encabezados son metadatos que proporcionan información adicional sobre la solicitud o la respuesta. Pueden incluir información sobre el tipo de contenido, la longitud del contenido, cookies, entre otros.</li> <br>
-        <li>Cuerpo del mensaje: En algunas solicitudes y respuestas, se incluye un cuerpo que contiene datos. Por ejemplo, en una solicitud POST, el cuerpo puede contener datos que el servidor debe procesar.</li> <br>
-        <li>Código de estado HTTP: En las respuestas HTTP, se incluye un código de estado que indica el resultado de la solicitud. Algunos códigos de estado comunes son:
-        
-          <ul><li>200 OK: La solicitud se ha completado con éxito.</li> 
-            <li>404 Not Found: El recurso solicitado no fue encontrado en el servidor.</li>
-            <li>500 Internal Server Error: El servidor encontró un error interno al procesar la solicitud.</li>
-        </ul>    <br>
-        
-        <li>Respuesta HTTP: La respuesta del servidor incluye el código de estado, encabezados y, en muchos casos, un cuerpo que contiene el recurso solicitado o información adicional.</li>
-
-        </ol></p>
+    <div class="content"> 
+        <h2>Estructura y funcionamiento</h2>
+        <p>
+            El Protocolo de Transferencia de Hipertexto es un protocolo utilizado en la World Wide Web para la transferencia de datos, especialmente documentos de hipertexto, como páginas web. Mantiene una estructura basada en los clientes y servidores y orientada a transacciones.
+        </p>
+            <ol>
+                <li>
+                    Cliente: El cliente es el software o la aplicación que solicita recursos (como páginas web) desde un servidor web. El cliente inicia la comunicación HTTP enviando una solicitud al servidor.
+                </li>
+                <li>
+                    Servidor: El servidor es el software que almacena los recursos web y los entrega a los clientes cuando se les solicita. Responde a las solicitudes HTTP que recibe de los clientes.
+                </li>
+                <li>
+                    URI (Uniform Resource Identifier): La URI es una cadena que identifica un recurso en la web. Es parte fundamental de una solicitud HTTP y puede ser una URL (Uniform Resource Locator) que incluye la dirección del recurso y el protocolo a utilizar.
+                </li>
+                <li>
+                    Método HTTP: La solicitud HTTP incluye un método que indica la acción que se debe realizar en el recurso identificado por la URI. 
+                </li>
+                <li>
+                    Encabezados HTTP: Los encabezados son metadatos que proporcionan información adicional sobre la solicitud o la respuesta. Pueden incluir información sobre el tipo de contenido, la longitud del contenido, cookies, entre otros.
+                </li>
+                <li>
+                    Cuerpo del mensaje: En algunas solicitudes y respuestas, se incluye un cuerpo que contiene datos. Por ejemplo, en una solicitud POST, el cuerpo puede contener datos que el servidor debe procesar.
+                </li>
+                <li>
+                    Código de estado HTTP: En las respuestas HTTP, se incluye un código de estado que indica el resultado de la solicitud. Algunos códigos de estado comunes son:
+                    <ul>
+                        <li>200 OK: La solicitud se ha completado con éxito.</li> 
+                        <li>404 Not Found: El recurso solicitado no fue encontrado en el servidor.</li>
+                        <li>500 Internal Server Error: El servidor encontró un error interno al procesar la solicitud.</li>
+                    </ul>
+                </li>
+                <li>
+                    Respuesta HTTP: La respuesta del servidor incluye el código de estado, encabezados y, en muchos casos, un cuerpo que contiene el recurso solicitado o información adicional.
+                </li>
+            </ol>
     </div>
-
-    
 </body>
 </html>
